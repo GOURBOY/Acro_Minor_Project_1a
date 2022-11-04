@@ -1,0 +1,26 @@
+<?php
+error_reporting(0);
+if($_POST['btn'])
+{
+    $fname= $_POST['fname'];
+    $lname= $_POST['lname'];
+    $pass= $_POST['pass'];
+    $conpass= $_POST['conpass'];
+    $gen= $_POST['gen'];
+    $email= $_POST['email'];
+    $phn= $_POST['phn'];
+    $adr= $_POST['adr'];
+
+    $query="Insert into studentinfo values('$fname','$lname','$pass','$conpass','$gen','$email','$phn','$adr')";
+    $data = mysqli_query($conn,$query);
+
+    if($data){
+        echo "Data Succesfully Inserted into Table";
+    }
+    else{
+
+        echo "Failed";
+    }
+
+}
+?>

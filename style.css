@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d071f9;
+    padding: 0 10px;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.container .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #d071f9;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container .form {
+    width: 100%;
+}
+
+.container .form .input_field {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.container .form .input_field label {
+    width: 200px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.container .form .input_field input,
+.container .form .input_field textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d071f9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+
+.container .form .input_field textarea {
+    resize: none;
+    height: 70px;
+}
+
+.container .form .input_field select {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    border: 1px solid #d071f9;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 10px;
+}
