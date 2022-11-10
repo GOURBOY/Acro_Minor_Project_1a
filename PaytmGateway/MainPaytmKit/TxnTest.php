@@ -29,7 +29,7 @@
 </style>
 </head>
 <body>
-<?php require 'C:\xampp\htdocs\Projects\AcroProj\FINAL_PROJ\Connect\partials\_nav.php';?>
+<?php require 'C:\xampp\htdocs\Projects\AcroProj\FINAL_PROJ\Connect\partials\_nav2.php';?>
 
 	<div>
 	<img  class="img1" src="Images/mus1.jpg" width="1520px" height="650px">

@@ -241,7 +241,7 @@
             <div class="container">
                 <div class="screen">
                     <div class="screen__content">
-                        <form class="login" action="welcome.php" method="post">
+                        <form class="login"  method="post">
                             <span class="LP">Login Page</span>
                             <div class="login__field">
                                 <i class="login__icon fas fa-user"></i>

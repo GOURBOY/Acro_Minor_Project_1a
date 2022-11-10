@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg bg-light navbar-dark bg-dark  sticky-top" style="margin: top -8px;" >
     <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="Images\minorProjectlogo.png" alt="Logo" width="90" height="60" class="ms-1 d-inline-block ">
+      <img src="Images/minorProjectlogo.png" alt="Logo" width="90" height="60" class="ms-1 d-inline-block ">
       <span class="navbar-brand fs-3  align-middle ms-2" >
       Atulya Bharat 
     </span>
