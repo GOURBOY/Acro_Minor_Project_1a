@@ -1,4 +1,6 @@
 <?php
+global $x;
+$x="Your Account is Succesfully Created Kindly Login";
 $showAlert=false;
 $err=false;
 if($_SERVER["REQUEST_METHOD"]=="POST"){
@@ -12,7 +14,7 @@ if($password==$cpassword && $exists==false){
     $result=mysqli_query($conn,$sql);
     if($result){
       $showAlert=true;
-     
+      
     }
    
 }
@@ -27,7 +29,13 @@ else
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Signup</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="signup.css">
+    
+    <style>
+      body{
+    /* background-color: rgb(255, 240, 140); */
+    background: linear-gradient(90deg, #9effe0, #ffb86b);
+}
+    </style>
 </head>
   <body>
 
@@ -47,8 +55,8 @@ else
   </div>'; 
   ?>   
     <div class="container">
-            <h1 class="text-center">Welcome To Signup Form</h1>
-    <form action="/Projects/LoginSystem/signup.php" method="post">
+            <h1 class="text-center">Welcome To Sign up Form</h1>
+    <form  method="post">
     <div class="mb-3">
     <label for="username" class="form-label">First Name</label>
     <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp" required>

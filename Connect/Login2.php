@@ -1,6 +1,7 @@
+<?php include "config.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,7 +18,7 @@
         }
         
         body {
-            background: linear-gradient(90deg, #C7C5F4, #776BCC);
+            background: linear-gradient(90deg, #9effe0, #ffb86b);
         }
         
         .container {
@@ -220,20 +221,37 @@
         </h1> -->
         <div class="o">
             <span><marquee scrollamount="20" loop="50"><img class="imgr" src="https://cdn.breathedreamgo.com/wp-content/uploads/2010/03/India-for-Beginners-custom-tours-5.jpg"><img class="imgr" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/09/Ajanta-Caves..jpg"><img class="imgr" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTas3iB7TSCt-G2mjaJKV1ivZd3INSKSK1_hmkZjejJwoIEUDO9YBDDdnatBzG-z_ARQ7s&usqp=CAU"><img class="imgr" src="https://img.traveltriangle.com/blog/wp-content/uploads/2018/08/Cover21.jpg"><img class="imgr" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyxJN1kW-Xo8B5ThRazoTWzAUBspADpC8qbA&usqp=CAU"><img class="imgr" src="https://www.tusktravel.com/blog/wp-content/uploads/2022/03/UNESCO-World-Heritage-Sites-of-South-India.jpg"></marquee></span>
+        
+ <?php
+ if($login){
+ echo '
+   <div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success!</strong> Login Successful
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>';
+    
+}
+  if($err)
+ echo '
+   <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Login Failed!</strong>&nbsp'."Kindly Check Your Credentials".' 
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>'; 
+  ?>  
             <div class="container">
                 <div class="screen">
                     <div class="screen__content">
-                        <form class="login" action="login2.php">
+                        <form class="login" action="logout.php" method="post">
                             <span class="LP">Login Page</span>
                             <div class="login__field">
                                 <i class="login__icon fas fa-user"></i>
-                                <input type="email" class="login__input" placeholder="User name / Email" />
+                                <input type="email" name="email" class="login__input" placeholder="User name / Email" />
                             </div>
                             <div class="login__field">
                                 <i class="login__icon fas fa-lock"></i>
-                                <input type="password" class="login__input" placeholder="Password" />
+                                <input type="password" name="password" class="login__input" placeholder="Password" />
                             </div>
-                            <button type="submit" class="button login__submit">
+                            <button type="submit" name="submit" class="button login__submit">
                   <span class="button__text">Log In Now</span>
                   <i class="button__icon fas fa-chevron-right"></i>
                 </button>
