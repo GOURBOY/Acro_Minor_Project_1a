@@ -58,37 +58,37 @@ else
             <h1 class="text-center">Welcome To Sign up Form</h1>
     <form  method="post">
     <div class="mb-3">
-    <label for="username" class="form-label">First Name</label>
+    <label for="username" class="form-label"><b>First Name</label>
     <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp" required>
     
   </div>
   <div class="mb-3">
-    <label for="username" class="form-label">Last Name</label>
+    <label for="username" class="form-label"><b>Last Name</label>
     <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp" required>
     
   </div>
   <div class="mb-3">
-    <label for="username" class="form-label">Phone No</label>
+    <label for="username" class="form-label"><b>Phone No</label>
     <input type="number" class="form-control" id="username" name="username" aria-describedby="emailHelp" required>
     
   </div>
   <div class="mb-3">
-    <label for="username" class="form-label">Date Of Birth</label>
+    <label for="username" class="form-label"><b>Date Of Birth</label>
     <input type="date" class="form-control" id="username" name="username" aria-describedby="emailHelp" required>
     
   </div>
 
     <div class="mb-3">
-    <label for="username" class="form-label">Email address</label>
+    <label for="username" class="form-label"><b>Email address</label>
     <input type="email" class="form-control" id="username" name="username" aria-describedby="emailHelp" required>
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
   </div>
   <div class="mb-3">
-    <label for="password" class="form-label">Password</label>
+    <label for="password" class="form-label"><b>Password</label>
     <input type="password" class="form-control" name="password" id="exampleInputPassword1" required>
   </div>
   <div class="mb-3">
-    <label for="cpassword" class="form-label">Confirm Password</label>
+    <label for="cpassword" class="form-label"><b>Confirm Password</label>
     <input type="password" class="form-control" name="cpassword" id="cpassword" required>
   </div>
   <div class="mb-3 form-check">
