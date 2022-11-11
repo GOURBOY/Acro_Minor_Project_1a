@@ -1,4 +1,5 @@
 <?php
+
 header("Pragma: no-cache");
 header("Cache-Control: no-cache");
 header("Expires: 0");
@@ -14,7 +15,7 @@ $isValidChecksum = "FALSE";
 $paramList = $_POST;
 $paytmChecksum = isset($_POST["CHECKSUMHASH"]) ? $_POST["CHECKSUMHASH"] : ""; //Sent by Paytm pg
 
-//Verify all parameters received from Paytm pg to your application. Like MID received from paytm pg is same as your application’s MID, TXN_AMOUNT and ORDER_ID are same as what was sent by you to Paytm PG for initiating transaction etc.
+//Verify all parameters received from Paytm pg to your application. Like MID received from paytm pg is same as your applicationï¿½s MID, TXN_AMOUNT and ORDER_ID are same as what was sent by you to Paytm PG for initiating transaction etc.
 $isValidChecksum = verifychecksum_e($paramList, PAYTM_MERCHANT_KEY, $paytmChecksum); //will return TRUE or FALSE string.
 
 
@@ -44,3 +45,30 @@ else {
 }
 
 ?>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			.homebutton{
+				margin-top:50px;
+				height:40px;
+				width:100px;
+				background:lightblue;
+				border:0px solid;
+				border-radius:30px;
+				font: larger bold ;
+							}
+		</style>
+	</head>
+	<body>
+		<center>
+		<input type="button" value="Continue" class="homebutton" id="btnHome" 
+			onClick="document.location.href='mus1.jpg'" height=30 />
+		</center>		
+	</body>
+	</html>
+

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+        .aa {
+            text-align: center;
+            padding: 7px 8px 9px 10px;
+            background-color: aquamarine;
+        }
+        h2{
+            margin-top: -7px;
+            margin-left: -10px;
+            width: 1520px;
+        }
+        .name,.email,.phone,.adult,.child,.date{
+            font-size: larger;
+            font-family: fantasy;
+        }
+        .namet,.emailt,.phonet,.adultt,.childt,.datet{
+            width: 250px;
+            background-color: cornsilk;
+            align-items: center;
+        }
+        .but{
+            font-family: fantasy;
+        }
+        .mus,.pay{
+            width: 400px;
+            padding-left: 80px;
+            align-items: center;
+            font-family: fantasy;
+            background-color: cornsilk;
+            }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Hello, world!</h1>
+         -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://gourboy.github.io/Acro_Minor_Project_1/Aaroh/Aarohi%20Main%20portal.html">Atulaya Bharat</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://gourboy.github.io/Acro_Minor_Project_1/Aaroh/Aarohi%20Main%20portal.html">My Account</a>
+                    </li>
+                    <a class="nav-link active" aria-current="page" href="https://gourboy.github.io/Acro_Minor_Project_1/Aaroh/Aarohi%20Main%20portal.html">Book Ticket</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Musuems</a></li>
+                            <li><a class="dropdown-item" href="#">Hertiage Sites</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Registration </a></li>
+                            <li><a class="dropdown-item" href="#">Enqiury </a></li>
+                        </ul>
+                    </li>
+                    <a class="nav-link active" aria-current="page" href="https://gourboy.github.io/Acro_Minor_Project_1/Aaroh/Aarohi%20Main%20portal.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="#">Link</a> -->
+                    </li>
+
+                    <!-- <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li> -->
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://source.unsplash.com/1600x700/?rajasthan" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                          <h5>Welcome To Atulaya Bharat</h5>
+                    <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1600x700/?forts" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome To Atulaya Bharat</h5>
+                    <!-- <p>Some representative placeholder content for the second slide.</p> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/1600x700/?statue" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome To Atulaya Bharat</h5>
+                    <!-- <p>Some representative placeholder content for the third slide.</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="aa">
+        <h2 style="text-align:center;background-color: cornflowerblue;">"अतिथि देवो भवः"</h2>
+        <h3 style="text-align:center;">To Confirm Your Ticket Please Fill the Form</h3>
+        <form class="aa" action="Aarohi Login.html">
+            <div class="elem-group">
+                <label class="name" for="name">Your Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                <input class="namet" style="text-align: center;" type="text" id="name" name="visitor_name" pattern="[A-Z\sa-z]{3,20}" required />
+            </div>
+            <div class="elem-group">
+                <label for="email" class="email">Your E-mail</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                <input class="emailt" type="email" id="email" name="visitor_email" required />
+            </div>
+            <div class="elem-group">
+                <label for="phone" class="phone">Your Phone</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                <input class="phonet" type="tel" id="phone" name="visitor_phone" pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})" required />
+            </div>
+            <hr />
+            <div class="elem-group inlined">
+                <label for="adult" class="adult">Adults</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                <input class="adultt" type="number" id="adult" name="total_adults" min="1" required />
+            </div>
+            <div class="elem-group inlined">
+                <label for="child" class="child">Children</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                <input type="number" class="childt" name="total_children" min="0"  required />
+            </div>
+            <div class="elem-group inlined">
+                <label for="date" class="date">Booking Date</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                <input type="date" class="datet" name="checkin" required />
+            </div>
+            <hr>
+            <select id="room-selection" class="mus" name="room_preference"  required>
+                  <option value="">Choose Museuem Which You Want To visit</option>
+                  <option value="connecting">Lalbhagh</option>
+                  <option value="adjoining">Indore Museuem</option>
+                  <option value="adjacent">Rajwada Palace</option>
+                </select>
+            <br><br>
+            <select id="room-selection" class="pay" name="room_preference" required>
+                  <option value="">Choose Mode of payment</option>
+                  <option value="connecting">Google</option>
+                  <option value="adjoining">phonepe</option>
+                  <option value="adjacent">Paytm</option>
+                  <option value="adjacent">Debit/Credit Card</option>
+                  <option value="adjacent">BHIM U.P.I</option>
+                </select>
+                <br><br><button class="but" type="submit">Book The Ticket</button>                 
+    </div>    
+         </div>
+         <!-- ABHAY -->
+    
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+
+</html>
